@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiiiii Mohan</title>
+</head>
+<body>
+<h1> Hiiiii  Mohan</h1>
+    <div id="sheet-container"></div>
+
+    <script src="https://apis.google.com/js/api.js"></script>
+    <!--<script>
+        // Initialize the API client with your API key or OAuth 2.0 credentials.
+        gapi.load('client', function() {
+            gapi.client.init({
+                apiKey: 'AIzaSyDGfUgO6g88Pd-zcj9BbxW8y-bFoivuJmI', // Replace with your API key
+            }).then(function() {
+                // Load the Google Sheets API.
+                return gapi.client.load('sheets', 'v4');
+            }).then(function() {
+                // Make a request to get data from the Google Sheet.
+                return gapi.client.sheets.spreadsheets.values.get({
+                    spreadsheetId: '1jNrpbR_mheHSvziA9dSy8UThxxGij0xGr8aS42W4wfc', // Replace with your spreadsheet ID
+                    range: 'MainSheet!A2:G15', // Replace with the desired sheet and range
+                });
+            }).then(function(response) {
+                // Handle the response and display the data in the div.
+                var values = response.result.values;
+                var sheetContainer = document.getElementById('sheet-container');
+                var table = '<table>';
+                for (var i = 0; i < values.length; i++) {
+                    table += '<tr>';
+                    for (var j = 0; j < values[i].length; j++) {
+                        table += '<td>' + values[i][j] + '</td>';
+                    }
+                    table += '</tr>';
+                }
+                table += '</table>';
+                sheetContainer.innerHTML = table;
+            });
+        });
+    </script>-->
+</body>
+</html>
